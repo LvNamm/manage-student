@@ -15,7 +15,7 @@
     <input  class="form-control" placeholder="Your birthday" name = "birthday">
   </div>
   <div class="form-group">
-  <label >Birthday (YYYY-mm-dd)</label>
+  <label >Address</label>
   {!!$errors->has('address')?'<p style = "color:red">'.$errors->get("address")[0].'</p>':""!!}
     <input  class="form-control" placeholder="Your Address" name = "address">
   </div>
