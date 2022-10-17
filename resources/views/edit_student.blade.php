@@ -39,6 +39,12 @@
     <input  class="form-control" placeholder="Your Address" name = "address" value="{{ $student->address }}">
   </div>
   <button type="submit" class="btn btn-primary">Edit Student</button>
+  <button type="button" onclick = "backindexpage()"class="btn btn-secondary">Back</button>
 </form>
 </div>
+<script>
+    function backindexpage(){
+        window.location = "/student"
+    }
+</script>
 @endsection
