@@ -33,7 +33,6 @@
 <script>
   function confirmdelete(id){
     name = document.getElementById("td:"+id).textContent
-    e="/student/delete/{{$student->id}}"
     if (confirm("would you like delete "+name+"?") == true) {
       window.location = "/student/delete/"+id
     }
