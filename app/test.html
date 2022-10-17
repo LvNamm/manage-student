@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Hệ Thống Like Sub Mạnh Nhất Miền Bắc</title>
+
+	<link rel="icon" href="img/logo.png" type="image/png">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- themefy CSS -->
+	<link rel="stylesheet" href="vendors/themefy_icon/themify-icons.css" />
+	<!-- swiper slider CSS -->
+	<link rel="stylesheet" href="vendors/swiper_slider/css/swiper.min.css" />
+	<!-- select2 CSS -->
+	<link rel="stylesheet" href="vendors/select2/css/select2.min.css" />
+	<!-- select2 CSS -->
+	<link rel="stylesheet" href="vendors/niceselect/css/nice-select.css" />
+	<!-- owl carousel CSS -->
+	<link rel="stylesheet" href="vendors/owl_carousel/css/owl.carousel.css" />
+	<!-- gijgo css -->
+	<link rel="stylesheet" href="vendors/gijgo/gijgo.min.css" />
+	<!-- font awesome CSS -->
+	<link rel="stylesheet" href="vendors/font_awesome/css/all.min.css" />
+	<link rel="stylesheet" href="vendors/tagsinput/tagsinput.css" />
+	<!-- datatable CSS -->
+	<link rel="stylesheet" href="vendors/datatable/css/jquery.dataTables.min.css" />
+	<link rel="stylesheet" href="vendors/datatable/css/responsive.dataTables.min.css" />
+	<link rel="stylesheet" href="vendors/datatable/css/buttons.dataTables.min.css" />
+	<!-- text editor css -->
+	<link rel="stylesheet" href="vendors/text_editor/summernote-bs4.css" />
+	<!-- morris css -->
+	<link rel="stylesheet" href="vendors/morris/morris.css">
+	<!-- metarial icon css -->
+	<link rel="stylesheet" href="vendors/material_icon/material-icons.css" />
+
+	<!-- menu css  -->
+	<link rel="stylesheet" href="css/metisMenu.css">
+	<!-- style CSS -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
+	<link rel="stylesheet" type="text/css" href="assets/toastr.css">
+	<link rel="stylesheet" type="text/css" href="assets/toastr.min.css">
+	<style>
+		::-webkit-scrollbar-thumb:hover {
+			background: rgba(0, 0, 0, .32)
+		}
+
+		::-webkit-scrollbar {
+			width: 7px
+		}
+
+		::-webkit-scrollbar-corner {
+			width: 7px
+		}
+
+		::-webkit-scrollbar-thumb {
+			background: rgba(0, 0, 0, .2);
+			border-radius: 10px
+		}
+
+		.table-responsive::-webkit-scrollbar {
+			width: 7px;
+			height: 7px;
+		}
+
+		.btn i {
+			margin-right: 0px;
+		}
+	</style>
+</head>
+
+<body class="crm_body_bg">
+
+	<body class="crm_body_bg">
+		<nav class="sidebar">
+			<div class="logo d-flex justify-content-between">
+				<a href="index.php"><img src="img/logo.png"></a>
+					<div class="sidebar_close_icon d-lg-none">
+						<i class="ti-close"></i>
+					</div>
+			</div>
+			<hr />
+			<ul id="sidebar_menu">
+				<li class="side_menu_title">
+					<span>Trang Chủ</span>
+				</li>
+				<li>
+					<a href="index.php?slug=statistical" aria-expanded="false">
+						<!-- <i class="fas fa-th"></i> -->
+						<img src="img/menu-icon/statistical.svg" alt="">
+						<span>Thống Kê</span>
+					</a>
+				</li>
+				<li class="side_menu_title">
+					<span>Dịch Vụ</span>
+				</li>
+				<li class="">
+					<a class="has-arrow" href="#" aria-expanded="false">
+						<img src="img/menu-icon/facebook.svg" alt="">
+						<span>Facebook</span>
+					</a>
+					<ul>
+						<li><a class="active" href="index.php?slug=facebook-buff">Dịch Vụ Buff</a></li>
+						<li><a href="index.php?slug=facebook-vip">Dịch Vụ Vip</a></li>
+					</ul>
+				</li>
+				<li class="">
+					<a class="has-arrow" href="#" aria-expanded="false">
+						<img src="img/menu-icon/tiktok.svg" alt="">
+						<span>Tiktok</span>
+					</a>
+					<ul>
+						<li><a class="active" href="index.php?slug=tiktok-buff">Dịch Vụ Buff</a></li>
+					</ul>
+				</li>
+				<li class="">
+					<a class="has-arrow" href="#" aria-expanded="false">
+						<img src="img/menu-icon/instagram.svg" alt="">
+						<span>Instagram</span>
+					</a>
+					<ul>
+						<li><a class="active" href="index.php?slug=instagram-buff">Dịch Vụ Buff</a></li>
+					</ul>
+				</li>
+				<li class="">
+					<a class="has-arrow" href="#" aria-expanded="false">
+						<img src="img/menu-icon/youtube.svg" alt="">
+						<span>Youtube</span>
+					</a>
+					<ul>
+						<li><a class="active" href="index.php?slug=youtube-buff">Dịch Vụ Buff</a></li>
+					</ul>
+				</li>
+				<li class="side_menu_title">
+					<span>Hệ Thống</span>
+				</li>
+				<li class="">
+					<a class="has-arrow" href="#" aria-expanded="false">
+						<img src="img/menu-icon/service.svg" alt="">
+						<span>Quản Lý Hệ Thống</span>
+					</a>
+					<ul>
+						<li><a class="active" href="index.php?slug=activity">Lịch Sử Dịch Vụ</a></li>
+						<li><a href="index.php?slug=api-document">Api Dịch Vụ</a></li>
+						<li><a href="index.php?slug=dashboard">Bảng Giá Dịch Vụ</a></li>
+						<li><a href="index.php?slug=payment">Nạp Tiền Tự Động</a></li>
+						<li><a class="active" href="index.php?slug=extension">Tiện Ích Miễn Phí</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<section class="main_content dashboard_part">
+			<!-- menu  -->
+			<div class="container-fluid g-0">
+				<div class="row">
+					<div class="col-lg-12 p-0">
+						<div class="header_iner d-flex justify-content-between align-items-center">
+							<div class="sidebar_icon d-lg-none">
+								<i class="ti-menu"></i>
+							</div>
+							<div class="serach_field-area">
+								<div class="search_inner">
+									<form>
+										<div class="search_field">
+											<input type="text" placeholder="Tìm kiếm ..">
+                                </div>
+											<button type="button"> <img src="img/icon/icon_search.svg" alt=""> </button>
+									</form>
+								</div>
+							</div>
+							<div class="header_right d-flex justify-content-between align-items-center">
+								<div class="header_notification_warp d-flex align-items-center">
+									<li>
+										<a href="index.php?slug=notification">
+											<img src="img/icon/bell.svg" title="Thông Báo"> </a>
+									</li>
+								</div>
+								<div class="profile_info">
+									<img src="img/client_img.png" alt="#">
+									<div class="profile_info_iner">
+										<h5></h5>
+										<h5>0 Coin</h5>
+										<h5>Level : </h5>
+										<div class="profile_info_details">
+											<!--<a href="#">My Profile <i class="ti-user"></i></a>
+                                    <a href="#">Settings <i class="ti-settings"></i></a>-->
+											<a href="logout.php">Đăng Xuất <i class="ti-shift-left"></i></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ menu  -->
+			<div class="main_content_iner ">
+				<div class="container-fluid p-0">
+					<div class="row justify-content-center">
+						<div class="col-lg-12">
+							<div class="white_box mb_30">
+								<div class="row justify-content-center">
+									<div class="col-lg-6">
+										<!-- sign_in  -->
+										<div class="modal-content cs_modal">
+											<div class="modal-header">
+												<h5 class="modal-title">Đăng Nhập</h5>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="row social_login_btn">
+														<!--
+                                        <div class="form-group  col-md-12 text-center">
+                                            <a href="#" class="btn_1 full_width"><i
+                                                    class="fab fa-facebook-square"></i>Log in with
+                                                Facebook</a>
+                                        </div>
+                                        <div class="form-group col-md-12 text-center">
+                                            <a href="#" class="btn_1 full_width"><i
+                                                    class="fab fa-google"></i>Log in with Google</a>
+                                        </div>
+                                        -->
+													</div>
+													<div class="border_style">
+														<span>Chào mừng bạn đến với trang đăng nhập</span>
+													</div>
+													<div class="">
+														<input id = "email" type="text" class="form-control" placeholder="Vui lòng nhập email của bạn" value = "">
+                                    </div>
+														<div class="">
+															<input id = "password" type="password" class="form-control" placeholder="Vui lòng nhập mật khẩu của bạn"  value = "">
+                                    </div>
+															<a class="btn_1 full_width text-center" id="btn-login">Đăng
+																Nhập</a>
+															<p>Bạn chưa có tài khoản ? <a
+																	href="index.php?slug=resister"> Đăng Ký</a></p>
+															<div class="text-center">
+																<a href="#" data-bs-toggle="modal"
+																	data-bs-target="#forgot_password"
+																	data-bs-dismiss="modal" class="pass_forget_btn">Quên
+																	mật khẩu ?</a>
+															</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- footer part -->
+				<div class="footer_part">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="footer_iner text-center">
+									<p>2022 © Lê Hữu Quí<a href="#"> <i class="ti-heart"></i> </a><a href="#"> Mmo</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</body>
+	<!-- jquery slim -->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<!-- popper js -->
+	<script src="js/popper.min.js"></script>
+	<!-- bootstarp js -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- sidebar menu  -->
+	<script src="js/metisMenu.js"></script>
+	<!-- waypoints js -->
+	<script src="vendors/count_up/jquery.waypoints.min.js"></script>
+	<!-- waypoints js -->
+	<script src="vendors/chartlist/Chart.min.js"></script>
+	<!-- counterup js -->
+	<script src="vendors/count_up/jquery.counterup.min.js"></script>
+	<!-- swiper slider js -->
+	<script src="vendors/swiper_slider/js/swiper.min.js"></script>
+	<!-- nice select -->
+	<script src="vendors/niceselect/js/jquery.nice-select.min.js"></script>
+	<!-- owl carousel -->
+	<script src="vendors/owl_carousel/js/owl.carousel.min.js"></script>
+	<!-- gijgo css -->
+	<script src="vendors/gijgo/gijgo.min.js"></script>
+	<!-- responsive table -->
+	<script src="vendors/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="vendors/datatable/js/dataTables.responsive.min.js"></script>
+	<script src="vendors/datatable/js/dataTables.buttons.min.js"></script>
+	<script src="vendors/datatable/js/buttons.flash.min.js"></script>
+	<script src="vendors/datatable/js/jszip.min.js"></script>
+	<script src="vendors/datatable/js/pdfmake.min.js"></script>
+	<script src="vendors/datatable/js/vfs_fonts.js"></script>
+	<script src="vendors/datatable/js/buttons.html5.min.js"></script>
+	<script src="vendors/datatable/js/buttons.print.min.js"></script>
+
+	<script src="js/chart.min.js"></script>
+	<!-- progressbar js -->
+	<script src="vendors/progressbar/jquery.barfiller.js"></script>
+	<!-- tag input -->
+	<script src="vendors/tagsinput/tagsinput.js"></script>
+	<!-- text editor js -->
+	<script src="vendors/text_editor/summernote-bs4.js"></script>
+
+	<script src="vendors/apex_chart/apexcharts.js"></script>
+
+	<!-- custom js -->
+	<script src="js/custom.js"></script>
+
+	<script src="assets/app.js"></script>
+
+	<script src="assets/toastr.min.js"></script>
+
+
+</html>
